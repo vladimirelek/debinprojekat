@@ -6,7 +6,7 @@ const Korpa = () => {
   const { cartItems } = useContext(CartContext);
   return (
     <div className="cart-container">
-      <h1>artikall</h1>
+      <h1>artikalll</h1>
     </div>
   );
 };
