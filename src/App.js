@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+import NavBar from "./Stranice/NavigationBar/Navbar";
+import Home from "./Stranice/Home/home";
+import Shop from "./Stranice/Shop/shop";
+import Auth from "./Stranice/Authentication/auth";
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<NavBar />}>
+          <Route index path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/auth" element={<Auth />} />
+        </Route>
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

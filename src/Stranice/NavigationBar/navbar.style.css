@@ -1,0 +1,33 @@
+.navigation-container {
+  background-color: rgb(231, 113, 113);
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-titles {
+  margin-left: 50px;
+  margin-top: 5px;
+}
+.nav-title {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+}
+.nav-title:hover {
+  color: black;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-link:hover {
+  color: black;
+}
+.nav-links {
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
