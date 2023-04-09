@@ -1,6 +1,7 @@
 .cart-container {
-  width: 100px;
+  width: 250px;
+  height: auto;
   position: absolute;
-  background-color: blanchedalmond;
+  background-color: lightcoral;
   right: 0px;
 }

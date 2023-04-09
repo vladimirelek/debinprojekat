@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/cart-context";
 const Kartice = ({ item }) => {
   const { setCartItems, cartItems } = useContext(CartContext);
+  const { addItemToCart } = useContext(CartContext);
 
   return (
     <div className="card-container">
